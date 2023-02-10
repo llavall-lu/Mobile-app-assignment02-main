@@ -1,4 +1,4 @@
-package com.example.ticketapplication;
+package com.example.ticketapplication.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.ticketapplication.activities.LoginActivity;
+import com.example.ticketapplication.MainActivity;
+import com.example.ticketapplication.R;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -21,6 +22,6 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
     public void mainAct(View view) {
-        startActivity(new Intent(RegistrationActivity.this,MainActivity.class));
+        startActivity(new Intent(RegistrationActivity.this, MainActivity.class));
     }
 }

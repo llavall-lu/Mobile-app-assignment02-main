@@ -1,4 +1,4 @@
-package com.example.ticketapplication.ui.slideshow;
+package com.example.ticketapplication.ui.Aboutus;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

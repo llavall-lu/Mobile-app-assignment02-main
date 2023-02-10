@@ -20,4 +20,11 @@
     <string name="don_t_have_an_account">Don\'t have an account?</string>
     <string name="_37243268_petroc_ac_uk">37243268@petroc.ac.uk</string>
     <string name="ticketManager">Ticket Manager</string>
+    <string name="_00_00_00_00">00:00 - 00:00</string>
+    <string name="ticket_available">Ticket Available</string>
+    <string name="sporting_events">Sporting Events</string>
+    <string name="my_tickets">My Tickets</string>
+    <string name="make_order">Make Order</string>
+    <string name="_240">£240</string>
+    <string name="total">Total</string>
 </resources>

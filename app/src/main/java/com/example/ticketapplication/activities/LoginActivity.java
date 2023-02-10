@@ -8,7 +8,6 @@ import android.view.View;
 
 import com.example.ticketapplication.MainActivity;
 import com.example.ticketapplication.R;
-import com.example.ticketapplication.RegistrationActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
