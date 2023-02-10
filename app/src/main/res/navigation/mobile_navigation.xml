@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_tickets"
         android:name="com.example.ticketapplication.ui.gallery.TicketsFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_tickets"
         tools:layout="@layout/fragment_tickets" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_aboutUs"
         android:name="com.example.ticketapplication.ui.slideshow.AboutUsFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_aboutUs"
         tools:layout="@layout/fragment_aboutus" />
 </navigation>

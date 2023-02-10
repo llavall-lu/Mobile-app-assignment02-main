@@ -8,16 +8,26 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.ticketapplication.R;
 
+import com.example.ticketapplication.databinding.FragmentTicketsBinding;
 
 public class TicketsFragment extends Fragment {
 
+    private FragmentTicketsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_tickets,container,false);
+
+
+        binding = FragmentTicketsBinding.inflate(inflater, container, false);
+        View root = binding.getRoot();
 
         return root;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 }

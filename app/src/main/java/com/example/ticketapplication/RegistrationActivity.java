@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.ticketapplication.activities.LoginActivity;
+
 public class RegistrationActivity extends AppCompatActivity {
 
     @Override
@@ -15,7 +17,7 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
     public void login(View view) {
-        startActivity(new Intent(RegistrationActivity.this,LoginActivity.class));
+        startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
     }
 
     public void mainAct(View view) {
