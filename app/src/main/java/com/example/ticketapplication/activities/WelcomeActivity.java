@@ -7,13 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.ticketapplication.R;
+import com.example.ticketapplication.databinding.ActivityWelcomeBinding;
 
 public class WelcomeActivity extends AppCompatActivity {
+
+    private ActivityWelcomeBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
+        binding = ActivityWelcomeBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
     }
 
     public void register(View view) {

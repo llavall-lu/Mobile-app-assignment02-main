@@ -48,7 +48,8 @@
 
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/emailEt"
+        android:layout_marginTop="30dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
@@ -62,7 +63,7 @@
         app:layout_constraintWidth_percent=".8" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/passwordEt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
@@ -73,7 +74,7 @@
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/emailEt"
         app:layout_constraintWidth_percent=".8" />
 
     <Button
@@ -89,7 +90,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEt"
         app:layout_constraintWidth_percent=".8"
         app:layout_constraintVertical_bias="0.6"/>
 
