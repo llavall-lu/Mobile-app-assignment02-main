@@ -28,16 +28,14 @@ public class TicketsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_tickets,container,false);
+        View view = inflater.inflate(R.layout.fragment_tickets, container,false);
 
-        recyclerView = view.findViewById(R.id.tickets_rec);
+        recyclerView = view.findViewById(R.id.tickets_rec);//Links to the layout tickets_rec
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        list = new ArrayList<>();
-        list.add(new TicketCartModel(R.drawable.football_gc01324476_1920,"Football","00","00:00 - 00:00"));
-        list.add(new TicketCartModel(R.drawable.football_gc01324476_1920,"Football","00","00:00 - 00:00"));
-        list.add(new TicketCartModel(R.drawable.football_gc01324476_1920,"Football","00","00:00 - 00:00"));
+        list = new ArrayList<>();//adds an Array list
+        list.add(new TicketCartModel(R.drawable.football_gc01324476_1920,"Football","00","00:00 - 00:00")); //Adds an Item to the array list
         ticketCartAdapter = new TicketCartAdapter(list);
-        recyclerView.setAdapter(ticketCartAdapter);
+        recyclerView.setAdapter(ticketCartAdapter);//sets the adapter
         return view;
     }
 

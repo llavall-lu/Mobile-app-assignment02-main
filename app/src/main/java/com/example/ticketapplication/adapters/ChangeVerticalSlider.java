@@ -5,5 +5,5 @@ import com.example.ticketapplication.models.HomeVerModel;
 import java.util.ArrayList;
 
 public interface ChangeVerticalSlider {
-    public void callBack(int position, ArrayList<HomeVerModel> list);
+    void callBack(int position, ArrayList<HomeVerModel> list); // changes the arraylist depending on the position of the slider
 }

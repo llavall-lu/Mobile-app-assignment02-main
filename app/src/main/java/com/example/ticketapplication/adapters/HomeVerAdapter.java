@@ -61,7 +61,7 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
                View sheetView = LayoutInflater.from(context).inflate(R.layout.bottom_sheet_layout,null);
                sheetView.findViewById(R.id.add_to_cart).setOnClickListener(new View.OnClickListener() {
                    @Override
-                   public void onClick(View view) {
+                   public void onClick(View v) {
                        Toast.makeText(context, "Added Ticket to Cart", Toast.LENGTH_SHORT).show();
                        bottomSheetDialog.dismiss();
                    }

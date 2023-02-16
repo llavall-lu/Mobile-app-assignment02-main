@@ -42,13 +42,14 @@ public class HomeFragment extends Fragment implements ChangeVerticalSlider {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        homeSlideRec = root.findViewById(R.id.home_slide_rec);
+        homeSlideRec = root.findViewById(R.id.home_slide_rec); //FindViewById is a way to interact with specific things outside of the use of binding
         homeVerticalRec = root.findViewById(R.id.home_ver_rec);
 
 
-        /////////////Slider Array
-        homeSlideModelList = new ArrayList<>();
+        //Slider Array
+        homeSlideModelList = new ArrayList<>(); //New ArrayList
 
+        //These are the icons on the horizontal slider
         homeSlideModelList.add(new HomeSlideModel(R.drawable.baseline_sports_baseball_24,""));
         homeSlideModelList.add(new HomeSlideModel(R.drawable.baseline_sports_basketball_24,""));
         homeSlideModelList.add(new HomeSlideModel(R.drawable.baseline_sports_golf_24,""));
@@ -56,13 +57,13 @@ public class HomeFragment extends Fragment implements ChangeVerticalSlider {
         homeSlideModelList.add(new HomeSlideModel(R.drawable.baseline_sports_soccer_24,""));
         homeSlideModelList.add(new HomeSlideModel(R.drawable.baseline_sports_tennis_24,""));
 
-        homeSlideAdapter = new HomeSlideAdapter(this,getActivity(),homeSlideModelList);
-        homeSlideRec.setAdapter(homeSlideAdapter);
+        homeSlideAdapter = new HomeSlideAdapter(this,getActivity(),homeSlideModelList); //this allows the code to interact with the homeSlideModel
+        homeSlideRec.setAdapter(homeSlideAdapter);//This sets the adapter homeSlideAdapter
         homeSlideRec.setLayoutManager(new LinearLayoutManager(getActivity(),RecyclerView.HORIZONTAL,false));
-        homeSlideRec.setHasFixedSize(true);
+        homeSlideRec.setHasFixedSize(true); //This means the size cannot be changed making sure that it stays constant
         homeSlideRec.setNestedScrollingEnabled(false);
 
-        //////////////Vertical Array
+        //Vertical Array
         homeVerModelList = new ArrayList<>();
 
 
