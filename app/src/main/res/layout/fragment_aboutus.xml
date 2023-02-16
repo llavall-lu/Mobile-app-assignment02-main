@@ -6,10 +6,86 @@
     android:layout_height="match_parent"
     tools:context=".ui.Aboutus.AboutUsFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <ImageView
+        android:id="@+id/AboutUs_Bg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="About us"
-        />
+        android:foreground="@drawable/foreground_gradient"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kayak_g44bba9758_1920"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/about_us"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".2"/>
+
+
+    <TextView
+        android:id="@+id/text_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/the_exe_water_sports_association_provides_facilities_to_578_members_across_four_clubs_whose_membership_reside_in_and_around_the_city_of_exeter"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/text_aboutUs"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.1" />
+
+
+    <TextView
+        android:id="@+id/text_links"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/more_info_at_https_exewatersports_org_about"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/text_aboutUs"
+        app:layout_constraintTop_toBottomOf="@+id/text_information"
+        app:layout_constraintVertical_bias="0.1" />
+
+
+    <TextView
+        android:id="@+id/text_findUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/find_us"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_aboutUs"
+        app:layout_constraintTop_toBottomOf="@+id/text_links"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <TextView
+        android:id="@+id/text_aboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="@string/exe_watersports_association_62_haven_road_exeter_devon_ex2_8dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/AboutUs_Bg"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.8" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

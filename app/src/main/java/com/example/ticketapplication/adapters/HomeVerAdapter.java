@@ -75,6 +75,7 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
                bottomName.setText(mName);
                bottomPrice.setText(mPrice);
                bottomImg.setImageResource(mImage);
+               bottomTime.setText(mDes);
 
                bottomSheetDialog.setContentView(sheetView);
                bottomSheetDialog.show();
